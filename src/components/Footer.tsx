@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { profile } from "@/content/resume";
 import Magnetic from "./Magnetic";
+import LinkedinIcon from "./LinkedinIcon";
 
 export default function Footer() {
   return (
@@ -29,6 +30,15 @@ export default function Footer() {
               {profile.email}
             </a>
           </Magnetic>
+          <a
+            href={profile.linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-full bg-[#0A66C2] px-5 py-2.5 font-medium text-white transition-transform hover:scale-105"
+          >
+            <LinkedinIcon size={16} />
+            LinkedIn
+          </a>
           <a
             href={`tel:${profile.phone.replace(/[^\d]/g, "")}`}
             className="flex items-center gap-2 rounded-full border border-surface-border px-5 py-2.5 text-muted transition-colors hover:border-accent hover:text-accent"

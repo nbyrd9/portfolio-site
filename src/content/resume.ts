@@ -8,6 +8,7 @@ export const profile = {
     "Developer Advocate turning complex APIs into content developers actually want to read.",
   headshot: "/images/headshot.jpg",
   authorUrl: "https://www.docusign.com/blog/author/niani-byrd",
+  linkedinUrl: "https://www.linkedin.com/in/nianibyrd/",
 };
 
 export type Highlight = {
