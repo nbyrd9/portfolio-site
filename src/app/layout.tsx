@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Fraunces, Bricolage_Grotesque } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { profile } from "@/content/resume";
 import Cursor from "@/components/Cursor";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Cursor />
         {children}
+        <Analytics />
       </body>
     </html>
   );
