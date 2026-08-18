@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Highlights from "@/components/Highlights";
+import Talks from "@/components/Talks";
 import Content from "@/components/Content";
 import Experience from "@/components/Experience";
 import About from "@/components/About";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Highlights />
+      <Talks />
       <Content />
       <Experience />
       <Interests />

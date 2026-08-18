@@ -49,13 +49,6 @@ export const highlights: Highlight[] = [
     tags: ["Content Strategy", "MCP", "Agentic Workflows"],
   },
   {
-    id: "momentum-talk",
-    title: "Spoke at Momentum, Docusign's flagship conference",
-    description:
-      "Led a session on AI-driven financial workflows as part of the first-ever Builder Track for technical audiences. Strong attendee engagement helped establish technical programming as a recurring part of future Momentum conferences.",
-    tags: ["Conference Talk", "AI", "Fintech"],
-  },
-  {
     id: "jpmorgan-quote",
     title: "Quoted by J.P. Morgan on developer workflows",
     description:
@@ -70,6 +63,62 @@ export const highlights: Highlight[] = [
       "Hosted a live community Q&A answering developer questions on automating agreement workflows with Docusign's APIs and Workflow Builder.",
     tags: ["Community", "Live Q&A", "Developer Engagement"],
     url: "https://community.docusign.com/general-74/september-developer-ask-me-anything-ama-building-and-automating-agreement-workflows-with-docusign-apis-25379",
+  },
+];
+
+export type Talk = {
+  id: string;
+  title: string;
+  event: string;
+  date: string;
+  location?: string;
+  type: "Conference Talk" | "Meetup Talk" | "Internal Talk" | "Conference";
+  description: string;
+  tags: string[];
+};
+
+export const talks: Talk[] = [
+  {
+    id: "momentum-talk",
+    title: "AI-Driven Financial Workflows",
+    event: "Momentum, Docusign's flagship conference",
+    date: "2026",
+    type: "Conference Talk",
+    description:
+      "Led a session on AI-driven financial workflows as part of the first-ever Builder Track for technical audiences. Strong attendee engagement helped establish technical programming as a recurring part of future Momentum conferences.",
+    tags: ["Conference Talk", "AI", "Fintech"],
+  },
+  {
+    id: "techconnect-talk",
+    title:
+      "The Hidden Infrastructure of Scale: Why Developer Experience Drives Product Value",
+    event: "TechConnect (internal)",
+    date: "2026",
+    type: "Internal Talk",
+    description:
+      "Made the case internally for developer experience as a driver of product value, not just a nice-to-have, drawing on lessons from Docusign's own developer content and onboarding work.",
+    tags: ["Internal Talk", "Developer Experience"],
+  },
+  {
+    id: "stripe-meetup",
+    title: "Agentic Workflows",
+    event: "Stripe meetup",
+    date: "2025",
+    type: "Meetup Talk",
+    description:
+      "Spoke at a Stripe-hosted meetup on building agentic workflows, sharing lessons from Docusign's own MCP and AI-driven developer tooling work.",
+    tags: ["Meetup Talk", "Agentic Workflows", "AI"],
+  },
+  {
+    id: "fintech-devcon",
+    title: "Docusign Booth",
+    event: "Fintech DevCon",
+    date: "2025",
+    location: "Denver, CO",
+    type: "Conference",
+    description:
+      "Represented Docusign at the Fintech DevCon booth, talking through APIs and integration patterns with developers on the show floor.",
+    tags: ["Conference", "Developer Engagement"],
   },
 ];
 
