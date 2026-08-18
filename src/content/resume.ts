@@ -80,13 +80,13 @@ export type Talk = {
 export const talks: Talk[] = [
   {
     id: "momentum-talk",
-    title: "AI-Driven Financial Workflows",
+    title: "Building the Future, One Workflow at a Time",
     event: "Momentum, Docusign's flagship conference",
     date: "2026",
     type: "Conference Talk",
     description:
       "Led a session on AI-driven financial workflows as part of the first-ever Builder Track for technical audiences. Strong attendee engagement helped establish technical programming as a recurring part of future Momentum conferences.",
-    tags: ["Conference Talk", "AI", "Fintech"],
+    tags: ["Conference Talk", "AI"],
   },
   {
     id: "techconnect-talk",
