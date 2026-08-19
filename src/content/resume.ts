@@ -83,6 +83,7 @@ export const talks: Talk[] = [
     title: "Building the Future, One Workflow at a Time",
     event: "Momentum, Docusign's flagship conference",
     date: "2026",
+    location: "New York, NY",
     type: "Conference Talk",
     description:
       "Led a session on AI-driven financial workflows as part of the first-ever Builder Track for technical audiences. Strong attendee engagement helped establish technical programming as a recurring part of future Momentum conferences.",
@@ -94,6 +95,7 @@ export const talks: Talk[] = [
       "The Hidden Infrastructure of Scale: Why Developer Experience Drives Product Value",
     event: "TechConnect (internal)",
     date: "2026",
+    location: "Virtual",
     type: "Internal Talk",
     description:
       "Made the case internally for developer experience as a driver of product value, not just a nice-to-have, drawing on lessons from Docusign's own developer content and onboarding work.",
@@ -104,6 +106,7 @@ export const talks: Talk[] = [
     title: "Agentic Workflows",
     event: "Stripe meetup",
     date: "2025",
+    location: "Chicago, IL",
     type: "Meetup Talk",
     description:
       "Spoke at a Stripe-hosted meetup on building agentic workflows, sharing lessons from Docusign's own MCP and AI-driven developer tooling work.",
