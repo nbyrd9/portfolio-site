@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Geist, Fraunces, Bricolage_Grotesque } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { profile } from "@/content/resume";
 import Cursor from "@/components/Cursor";
+import AnalyticsRegion from "@/components/AnalyticsRegion";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +27,9 @@ export const metadata: Metadata = {
   description: profile.tagline,
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const region = (await headers()).get("x-vercel-ip-country-region");
+
   return (
     <html
       lang="en"
@@ -35,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Cursor />
         {children}
         <Analytics />
+        <AnalyticsRegion region={region} />
       </body>
     </html>
   );
