@@ -17,10 +17,10 @@ export default function About() {
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted">
             I&apos;m a Developer Advocate who started out as a software
-            engineer, shipping features in Ruby on Rails and React at
+            engineer, shipping features in ReactJS and Ruby on Rails at
             Calendly and running onboarding experiments that shaped how new
-            users experienced the product. I love building, and that instinct
-            never went away.
+            users experienced the product. Working close to the code is
+            still how I understand what developers need.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
             What pulled me toward advocacy was knowing what it feels like to
@@ -35,8 +35,8 @@ export default function About() {
             I spent years as an international flight attendant before
             switching into software. Turns out explaining procedures clearly
             to a packed cabin under
-            pressure is excellent training for creating content developers
-            actually use.
+            pressure is excellent training for turning complexity into
+            something clear. ✈️
           </p>
         </motion.div>
       </div>

@@ -5,7 +5,7 @@ export const profile = {
   email: "nianibyrd@gmail.com",
   phone: "804-896-5277",
   tagline:
-    "Developer Advocate turning complex APIs into content developers actually want to read.",
+    "Developer Advocate turning complex APIs into content worth reading.",
   headshot: "/images/headshot.jpg",
   authorUrl: "https://www.docusign.com/blog/author/niani-byrd",
   linkedinUrl: "https://www.linkedin.com/in/nianibyrd/",
