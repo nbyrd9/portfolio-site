@@ -29,7 +29,7 @@ export const highlights: Highlight[] = [
   },
   {
     id: "onboarding-program",
-    title: "Designed a developer onboarding program from scratch",
+    title: "Turned developer onboarding chaos into a repeatable program",
     description:
       "Identified a gap in developer onboarding and designed a structured program for newly hired internal developers; launched the initiative, drove adoption, and iterated based on direct developer feedback.",
     tags: ["Program Design", "Internal Enablement"],
@@ -39,11 +39,11 @@ export const highlights: Highlight[] = [
     title: "Held API office hours for developers",
     description:
       "Ran recurring live office hours answering developer questions on Docusign APIs, with positive feedback and high engagement. Metrics show my sessions are consistently among the highest-rated.",
-    tags: ["Office Hours", "Developer Engagement"],
+    tags: ["Office Hours", "Developer Engagement", "Webinar"],
   },
   {
     id: "mcp-content-strategy",
-    title: "Built Docusign's MCP server developer content from scratch",
+    title: "Owned Docusign's MCP developer content",
     description:
       "Established the developer content strategy for MCP server integration from the ground up: the full library of tutorials, technical content, and API documentation enabling developers to build agentic workflows on the platform.",
     tags: ["Content Strategy", "MCP", "Agentic Workflows"],
@@ -120,7 +120,7 @@ export const talks: Talk[] = [
     location: "Denver, CO",
     type: "Conference",
     description:
-      "Represented Docusign at the Fintech DevCon booth, talking through APIs and integration patterns with developers on the show floor.",
+      "Represented Docusign at Fintech DevCon, talking through APIs and integration patterns with developers on the show floor.",
     tags: ["Conference", "Developer Engagement"],
   },
 ];
