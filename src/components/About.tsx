@@ -18,16 +18,16 @@ export default function About() {
           <p className="mt-6 text-lg leading-relaxed text-muted">
             I&apos;m a Developer Advocate who started out as a software
             engineer, shipping features in ReactJS and Ruby on Rails at
-            Calendly and running onboarding experiments that shaped how new
+            Calendly, and running onboarding experiments that shaped how new
             users experienced the product. Working close to the code is
-            still how I understand what developers need.
+            how I understand what developers need.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
             What pulled me toward advocacy was knowing what it feels like to
             be a blocked engineer: staring at a cryptic error with no clear
             next step, digging through outdated docs, losing an afternoon to
             something that should have taken ten minutes. I moved into
-            Developer Advocacy to close that gap, building the API docs,
+            Developer Advocacy to close that gap by building the API docs,
             tutorials, videos, talks, and reference implementations I wish
             I&apos;d had.
           </p>
