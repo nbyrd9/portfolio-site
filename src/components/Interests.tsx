@@ -66,7 +66,7 @@ export default function Interests() {
           transition={{ duration: 0.5, delay: 0.05 }}
           className="mt-3 text-muted"
         >
-          A few things about me that have nothing to do with APIs&hellip; for now.
+          A few things about me that have nothing to do with code&hellip; for now.
         </motion.p>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-3">
