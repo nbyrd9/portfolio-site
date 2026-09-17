@@ -27,7 +27,7 @@ export default function About() {
             What pulled me toward developer relations was knowing what it feels 
             like to be a blocked engineer: staring at a cryptic error with no clear 
             next step, digging through outdated docs, losing an afternoon to something 
-            that should have taken ten minutes. Now I draw on my engineering experience to 
+            that should have taken ten minutes...😵‍💫 Now I draw on my engineering experience to 
             create the API docs, tutorials, videos, talks, and reference implementations 
             I wish I&apos;d had.
           </p>
