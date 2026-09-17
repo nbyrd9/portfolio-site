@@ -24,13 +24,12 @@ export default function About() {
             what developers need and where they get stuck.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            What pulled me toward developer relations was knowing what it feels like to
-            be a blocked engineer: staring at a cryptic error with no clear
-            next step, digging through outdated docs, losing an afternoon to
-            something that should have taken ten minutes. I moved into
-            Developer Advocacy to close that gap by building the API docs,
-            tutorials, videos, talks, and reference implementations I wish
-            I&apos;d had.
+            What pulled me toward developer relations was knowing what it feels 
+            like to be a blocked engineer: staring at a cryptic error with no clear 
+            next step, digging through outdated docs, losing an afternoon to something 
+            that should have taken ten minutes. Now I draw on my engineering experience to 
+            create the API docs, tutorials, videos, talks, and reference implementations 
+            I wish I&apos;d had.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
             I spent years as an international flight attendant before
