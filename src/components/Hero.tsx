@@ -71,7 +71,7 @@ export default function Hero() {
             </a>
             <a
               href={`mailto:${profile.email}`}
-              className="inline-block rounded-full border border-surface-border px-6 py-3 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
+              className="inline-block rounded-full border border-surface-border px-6 py-3 text-sm font-medium transition-all hover:scale-105 hover:border-accent hover:text-accent"
             >
               Get in touch
             </a>
