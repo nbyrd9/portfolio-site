@@ -70,27 +70,31 @@ export default function Footer() {
               className="flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 font-medium text-background transition-transform hover:scale-105"
             >
               <Mail size={16} />
-              {profile.email}
+              Email me!
             </a>
           </Magnetic>
-          <a
-            href={profile.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full bg-[#181717] px-5 py-2.5 font-medium text-white transition-transform hover:scale-105"
-          >
-            <GithubIcon size={16} />
-            GitHub
-          </a>
-          <a
-            href={profile.linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full bg-[#0A66C2] px-5 py-2.5 font-medium text-white transition-transform hover:scale-105"
-          >
-            <LinkedinIcon size={16} />
-            LinkedIn
-          </a>
+          <Magnetic>
+            <a
+              href={profile.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full bg-[#181717] px-5 py-2.5 font-medium text-white transition-transform hover:scale-105"
+            >
+              <GithubIcon size={16} />
+              GitHub
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              href={profile.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full bg-[#0A66C2] px-5 py-2.5 font-medium text-white transition-transform hover:scale-105"
+            >
+              <LinkedinIcon size={16} />
+              LinkedIn
+            </a>
+          </Magnetic>
         </div>
       </motion.div>
 
