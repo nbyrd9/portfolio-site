@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { profile } from "@/content/resume";
-import Magnetic from "./Magnetic";
 
 const container: Variants = {
   hidden: {},
@@ -64,22 +63,18 @@ export default function Hero() {
           </motion.h1>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
-            <Magnetic>
-              <a
-                href="#highlights"
-                className="inline-block rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:scale-105"
-              >
-                See my work
-              </a>
-            </Magnetic>
-            <Magnetic>
-              <a
-                href={`mailto:${profile.email}`}
-                className="inline-block rounded-full border border-surface-border px-6 py-3 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
-              >
-                Get in touch
-              </a>
-            </Magnetic>
+            <a
+              href="#highlights"
+              className="inline-block rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:scale-105"
+            >
+              See my work
+            </a>
+            <a
+              href={`mailto:${profile.email}`}
+              className="inline-block rounded-full border border-surface-border px-6 py-3 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
+            >
+              Get in touch
+            </a>
           </motion.div>
         </div>
 
