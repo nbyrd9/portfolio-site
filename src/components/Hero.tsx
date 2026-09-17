@@ -46,7 +46,7 @@ export default function Hero() {
         animate="show"
         className="relative mx-auto flex w-full max-w-4xl flex-col-reverse items-center gap-10 sm:flex-row sm:items-center sm:justify-between"
       >
-        <div className="w-full max-w-3xl">
+        <div className="w-full max-w-3xl text-center sm:text-left">
           <motion.p
             variants={item}
             className="mb-4 font-label text-sm uppercase tracking-[0.2em] text-muted"
@@ -62,7 +62,10 @@ export default function Hero() {
             <span className="text-gradient">{profile.name.split(" ")[0]}</span>.
           </motion.h1>
 
-          <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
+          <motion.div
+            variants={item}
+            className="mt-10 flex flex-wrap justify-center gap-4 sm:justify-start"
+          >
             <a
               href="#highlights"
               className="inline-block rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:scale-105"
