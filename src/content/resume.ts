@@ -1,6 +1,6 @@
 export const profile = {
   name: "Niani Byrd",
-  title: "Developer Relations",
+  title: "Software Engineer | Developer Advocate",
   location: "Chicago, IL",
   email: "nianibyrd@gmail.com",
   phone: "804-896-5277",
@@ -9,6 +9,7 @@ export const profile = {
   headshot: "/images/headshot.jpg",
   authorUrl: "https://www.docusign.com/blog/author/niani-byrd",
   linkedinUrl: "https://www.linkedin.com/in/nianibyrd/",
+  githubUrl: "https://github.com/nbyrd9",
 };
 
 export type Highlight = {

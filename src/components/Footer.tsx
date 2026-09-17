@@ -1,12 +1,47 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import { profile } from "@/content/resume";
 import Magnetic from "./Magnetic";
 import LinkedinIcon from "./LinkedinIcon";
+import GithubIcon from "./GithubIcon";
+
+const talkTopics = [
+  "developer experience",
+  "software engineering",
+  "developer relations",
+  "technical writing",
+];
 
 export default function Footer() {
+  const [topicIndex, setTopicIndex] = useState(0);
+  const [isGlitching, setIsGlitching] = useState(false);
+
+  useEffect(() => {
+    const swapDelay = 350;
+    const glitchDuration = 900;
+    let swapTimeout: ReturnType<typeof setTimeout>;
+    let endTimeout: ReturnType<typeof setTimeout>;
+
+    const id = setInterval(() => {
+      setIsGlitching(true);
+      swapTimeout = setTimeout(() => {
+        setTopicIndex((i) => (i + 1) % talkTopics.length);
+      }, swapDelay);
+      endTimeout = setTimeout(() => {
+        setIsGlitching(false);
+      }, glitchDuration);
+    }, 3400);
+
+    return () => {
+      clearInterval(id);
+      clearTimeout(swapTimeout);
+      clearTimeout(endTimeout);
+    };
+  }, []);
+
   return (
     <footer id="contact" className="px-6 py-24 sm:px-10">
       <motion.div
@@ -17,7 +52,15 @@ export default function Footer() {
         className="mx-auto max-w-3xl rounded-3xl border border-surface-border bg-surface px-8 py-14 text-center"
       >
         <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold sm:text-4xl">
-          Let&apos;s talk <span className="text-gradient">developer experience</span>
+          Let&apos;s talk{" "}
+          <span className="text-gradient">
+            <span
+              data-text={talkTopics[topicIndex]}
+              className={`glitch-text${isGlitching ? " is-glitching" : ""}`}
+            >
+              {talkTopics[topicIndex]}
+            </span>
+          </span>
         </h2>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm">
@@ -31,6 +74,15 @@ export default function Footer() {
             </a>
           </Magnetic>
           <a
+            href={profile.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-full bg-[#181717] px-5 py-2.5 font-medium text-white transition-transform hover:scale-105"
+          >
+            <GithubIcon size={16} />
+            GitHub
+          </a>
+          <a
             href={profile.linkedinUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -39,17 +91,6 @@ export default function Footer() {
             <LinkedinIcon size={16} />
             LinkedIn
           </a>
-          <a
-            href={`tel:${profile.phone.replace(/[^\d]/g, "")}`}
-            className="flex items-center gap-2 rounded-full border border-surface-border px-5 py-2.5 text-muted transition-colors hover:border-accent hover:text-accent"
-          >
-            <Phone size={16} />
-            {profile.phone}
-          </a>
-          <span className="flex items-center gap-2 text-muted">
-            <MapPin size={16} />
-            {profile.location}
-          </span>
         </div>
       </motion.div>
 
