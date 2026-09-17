@@ -78,7 +78,7 @@ export default function Footer() {
               href={profile.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full bg-[#181717] px-5 py-2.5 font-medium text-white transition-transform hover:scale-105"
+              className="flex items-center gap-2 rounded-full border border-surface-border px-5 py-2.5 font-medium text-foreground transition-all hover:scale-105 hover:border-accent hover:text-accent"
             >
               <GithubIcon size={16} />
               GitHub
