@@ -16,10 +16,12 @@ export default function About() {
             About me
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            I&apos;m a Developer Advocate and software engineer. I shipped features 
-            in ReactJS and Ruby on Rails, ran onboarding experiments that shaped how new
-            users experienced the product, and . Working close to the code is
-            how I understand what developers need.
+            I&apos;m a software engineer who brings a builder&apos;s 
+            perspective to developer relations. I&apos;ve shipped features 
+            in ReactJS and Ruby on Rails, run onboarding experiments that shaped 
+            the experience for new users, and brought developer feedback into 
+            product decisions. Staying close to the code helps me understand 
+            what developers need and where they get stuck.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
             What pulled me toward developer relations was knowing what it feels like to
