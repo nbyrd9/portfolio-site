@@ -45,30 +45,23 @@ export default function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative mx-auto flex w-full max-w-5xl flex-col-reverse items-center gap-10 sm:flex-row sm:items-center sm:justify-between"
+        className="relative mx-auto flex w-full max-w-4xl flex-col-reverse items-center gap-10 sm:flex-row sm:items-center sm:justify-between"
       >
-        <div className="w-full max-w-2xl">
+        <div className="w-full max-w-3xl">
           <motion.p
             variants={item}
             className="mb-4 font-label text-sm uppercase tracking-[0.2em] text-muted"
           >
-            {profile.location} · Developer Advocate
+            Software Engineer · Developer Relations
           </motion.p>
 
           <motion.h1
             variants={item}
-            className="font-[family-name:var(--font-display)] text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl"
+            className="font-[family-name:var(--font-display)] text-6xl font-semibold leading-[1.05] tracking-tight sm:text-8xl"
           >
             Hi, I&apos;m{" "}
             <span className="text-gradient">{profile.name.split(" ")[0]}</span>.
           </motion.h1>
-
-          <motion.p
-            variants={item}
-            className="mt-6 max-w-2xl text-lg text-muted sm:text-xl"
-          >
-            {profile.tagline}
-          </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
             <Magnetic>
@@ -101,10 +94,10 @@ export default function Hero() {
             <Image
               src={profile.headshot}
               alt={profile.name}
-              width={224}
-              height={224}
+              width={288}
+              height={288}
               priority
-              className="h-40 w-40 rounded-full object-cover sm:h-56 sm:w-56"
+              className="h-40 w-40 rounded-full object-cover sm:h-64 sm:w-64"
             />
           </div>
         </motion.div>
