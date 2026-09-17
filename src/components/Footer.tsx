@@ -67,7 +67,7 @@ export default function Footer() {
           <Magnetic>
             <a
               href={`mailto:${profile.email}`}
-              className="flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 font-medium text-background transition-transform hover:scale-105"
+              className="flex items-center gap-2 rounded-full bg-accent-2 px-5 py-2.5 font-medium text-black transition-transform hover:scale-105"
             >
               <Mail size={16} />
               Email me!
