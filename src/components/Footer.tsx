@@ -53,13 +53,11 @@ export default function Footer() {
       >
         <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold sm:text-4xl">
           Let&apos;s talk{" "}
-          <span className="text-gradient">
-            <span
-              data-text={talkTopics[topicIndex]}
-              className={`glitch-text${isGlitching ? " is-glitching" : ""}`}
-            >
-              {talkTopics[topicIndex]}
-            </span>
+          <span
+            data-text={talkTopics[topicIndex]}
+            className={`text-gradient glitch-text${isGlitching ? " is-glitching" : ""}`}
+          >
+            {talkTopics[topicIndex]}
           </span>
         </h2>
 

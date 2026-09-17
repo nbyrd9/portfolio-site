@@ -51,6 +51,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .glitch-text {
@@ -72,12 +73,14 @@ body {
 
 .glitch-text.is-glitching::before {
   color: var(--accent-2);
+  -webkit-text-fill-color: var(--accent-2);
   animation: glitch-slice-1 0.9s steps(2, jump-end) both;
   mix-blend-mode: screen;
 }
 
 .glitch-text.is-glitching::after {
   color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
   animation: glitch-slice-2 0.9s steps(2, jump-end) both;
   mix-blend-mode: screen;
 }
