@@ -22,7 +22,6 @@ function HighlightCard({
     className: clsx(
       "group relative overflow-hidden rounded-2xl border border-surface-border bg-surface p-6 transition-shadow hover:shadow-xl hover:shadow-accent/10",
       centered && "sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-[calc(50%-0.625rem)]",
-      h.flashing && "neon-flash",
     ),
   };
 
@@ -48,6 +47,19 @@ function HighlightCard({
           </span>
         ))}
       </div>
+      {h.repoUrl && (
+        <a
+          href={h.repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={clsx(
+            "relative z-10 mt-5 inline-block rounded-full border border-accent px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-white",
+            h.flashing && "neon-flash",
+          )}
+        >
+          Check out the repo
+        </a>
+      )}
     </>
   );
 
