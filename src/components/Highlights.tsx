@@ -46,7 +46,7 @@ function HighlightCard({
               target="_blank"
               rel="noopener noreferrer"
               className={clsx(
-                "relative z-10 inline-block rounded-md bg-accent px-2.5 py-1 align-middle text-xs font-semibold text-white transition-opacity hover:opacity-90",
+                "relative z-10 inline-block rounded-md px-1 text-xs font-semibold text-accent",
                 h.flashing && "neon-flash",
               )}
             >
