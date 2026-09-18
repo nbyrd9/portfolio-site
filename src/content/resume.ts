@@ -18,6 +18,7 @@ export type Highlight = {
   description: string;
   tags: string[];
   url?: string;
+  flashing?: boolean;
 };
 
 export const highlights: Highlight[] = [
@@ -27,6 +28,8 @@ export const highlights: Highlight[] = [
     description:
       "Architected a workflow combining Docusign APIs with a major financial institution's validation services: shipped the GitHub repo, authored the technical blog post, and produced a 15-minute video walkthrough for developer audiences.",
     tags: ["System Architecture", "Programming", "Technical Writing"],
+    url: "https://github.com/docusign/automated-account-opening-implementation",
+    flashing: true,
   },
   {
     id: "onboarding-program",

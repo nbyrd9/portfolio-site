@@ -22,6 +22,7 @@ function HighlightCard({
     className: clsx(
       "group relative overflow-hidden rounded-2xl border border-surface-border bg-surface p-6 transition-shadow hover:shadow-xl hover:shadow-accent/10",
       centered && "sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-[calc(50%-0.625rem)]",
+      h.flashing && "neon-flash",
     ),
   };
 
