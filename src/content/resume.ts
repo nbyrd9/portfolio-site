@@ -68,7 +68,8 @@ export const highlights: Highlight[] = [
     description:
       "Hosted a live community Q&A answering developer questions on automating agreement workflows with Docusign's APIs and Workflow Builder.",
     tags: ["Community", "Live Q&A", "Developer Engagement"],
-    url: "https://community.docusign.com/general-74/september-developer-ask-me-anything-ama-building-and-automating-agreement-workflows-with-docusign-apis-25379",
+    linkText: "community Q&A",
+    linkUrl: "https://community.docusign.com/general-74/september-developer-ask-me-anything-ama-building-and-automating-agreement-workflows-with-docusign-apis-25379",
   },
 ];
 
