@@ -179,42 +179,6 @@ body {
   }
 }
 
-.neon-flash {
-  animation: neon-flash 3s linear infinite;
-}
-
-@keyframes neon-flash {
-  0%,
-  100% {
-    border-color: var(--accent);
-    box-shadow: 0 0 14px 1px var(--accent), 0 0 30px 6px var(--accent);
-  }
-  8% {
-    border-color: var(--surface-border);
-    box-shadow: none;
-  }
-  10% {
-    border-color: var(--accent);
-    box-shadow: 0 0 14px 1px var(--accent), 0 0 30px 6px var(--accent);
-  }
-  45% {
-    border-color: var(--accent-2);
-    box-shadow: 0 0 14px 1px var(--accent-2), 0 0 30px 6px var(--accent-2);
-  }
-  47% {
-    border-color: var(--surface-border);
-    box-shadow: none;
-  }
-  50% {
-    border-color: var(--accent-2);
-    box-shadow: 0 0 14px 1px var(--accent-2), 0 0 30px 6px var(--accent-2);
-  }
-  90% {
-    border-color: var(--accent);
-    box-shadow: 0 0 14px 1px var(--accent), 0 0 30px 6px var(--accent);
-  }
-}
-
 @media (hover: hover) and (pointer: fine) {
   html.custom-cursor,
   html.custom-cursor * {

@@ -45,10 +45,7 @@ function HighlightCard({
               href={h.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={clsx(
-                "relative z-10 inline-block rounded-md px-1 text-xs font-semibold text-accent",
-                h.flashing && "neon-flash",
-              )}
+              className="relative z-10 inline-block rounded-md px-1 text-xs font-semibold text-accent transition-opacity hover:opacity-80"
             >
               Repo here!
             </a>
