@@ -19,6 +19,8 @@ export type Highlight = {
   tags: string[];
   url?: string;
   repoUrl?: string;
+  linkText?: string;
+  linkUrl?: string;
 };
 
 export const highlights: Highlight[] = [
@@ -57,7 +59,8 @@ export const highlights: Highlight[] = [
     description:
       "Featured on J.P. Morgan's developer blog recapping the Momentum 2026 joint session: “We are living in a day and age where developers no longer have to choose between speed or flexibility anymore, they can have both.”",
     tags: ["Press Mention", "Partnership"],
-    url: "https://developer.payments.jpmorgan.com/blog/community/docusign-momentum-2026-mcp-ai-workflows",
+    linkText: "developer blog",
+    linkUrl: "https://developer.payments.jpmorgan.com/blog/community/docusign-momentum-2026-mcp-ai-workflows",
   },
   {
     id: "developer-ama",

@@ -4,6 +4,29 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { highlights, type Highlight } from "@/content/resume";
 
+function renderDescription(h: Highlight) {
+  if (h.linkText && h.linkUrl) {
+    const idx = h.description.indexOf(h.linkText);
+    if (idx !== -1) {
+      return (
+        <>
+          {h.description.slice(0, idx)}
+          <a
+            href={h.linkUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative z-10 text-accent underline underline-offset-2 hover:opacity-80"
+          >
+            {h.linkText}
+          </a>
+          {h.description.slice(idx + h.linkText.length)}
+        </>
+      );
+    }
+  }
+  return h.description;
+}
+
 function HighlightCard({
   h,
   delay,
@@ -37,7 +60,7 @@ function HighlightCard({
       />
       <h3 className="text-lg font-semibold">{h.title}</h3>
       <p className="mt-3 text-sm leading-relaxed text-muted">
-        {h.description}
+        {renderDescription(h)}
         {h.repoUrl && (
           <>
             {" "}
