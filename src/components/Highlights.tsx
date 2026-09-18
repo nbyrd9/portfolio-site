@@ -36,7 +36,25 @@ function HighlightCard({
         }}
       />
       <h3 className="text-lg font-semibold">{h.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-muted">{h.description}</p>
+      <p className="mt-3 text-sm leading-relaxed text-muted">
+        {h.description}
+        {h.repoUrl && (
+          <>
+            {" "}
+            <a
+              href={h.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={clsx(
+                "relative z-10 inline-block rounded-md bg-accent px-2.5 py-1 align-middle text-xs font-semibold text-white transition-opacity hover:opacity-90",
+                h.flashing && "neon-flash",
+              )}
+            >
+              Repo here!
+            </a>
+          </>
+        )}
+      </p>
       <div className="mt-5 flex flex-wrap gap-2">
         {h.tags.map((tag) => (
           <span
@@ -47,19 +65,6 @@ function HighlightCard({
           </span>
         ))}
       </div>
-      {h.repoUrl && (
-        <a
-          href={h.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={clsx(
-            "relative z-10 mt-5 inline-block rounded-full border border-accent px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-white",
-            h.flashing && "neon-flash",
-          )}
-        >
-          Check out the repo
-        </a>
-      )}
     </>
   );
 
