@@ -57,7 +57,7 @@ export const highlights: Highlight[] = [
     id: "jpmorgan-quote",
     title: "Quoted by J.P. Morgan on developer workflows",
     description:
-      "Featured on J.P. Morgan's developer blog recapping the Momentum 2026 joint session: “We are living in a day and age where developers no longer have to choose between speed or flexibility anymore, they can have both.”",
+      "Featured in J.P. Morgan's developer blog recapping the Momentum 2026 joint session: “We are living in a day and age where developers no longer have to choose between speed or flexibility anymore, they can have both.”",
     tags: ["Press Mention", "Partnership"],
     linkText: "developer blog",
     linkUrl: "https://developer.payments.jpmorgan.com/blog/community/docusign-momentum-2026-mcp-ai-workflows",
