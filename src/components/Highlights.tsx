@@ -43,7 +43,7 @@ function HighlightCard({
     transition: { duration: 0.5, delay },
     whileHover: { y: -6 },
     className: clsx(
-      "group relative overflow-hidden rounded-2xl border border-surface-border bg-surface p-6 transition-shadow hover:shadow-xl hover:shadow-accent/10",
+      "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-surface-border bg-surface p-6 transition-shadow hover:shadow-xl hover:shadow-accent/10",
       centered && "sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-[calc(50%-0.625rem)]",
     ),
   };
@@ -75,7 +75,7 @@ function HighlightCard({
           </>
         )}
       </p>
-      <div className="mt-5 flex flex-wrap gap-2">
+      <div className="mt-auto flex flex-wrap gap-2 pt-5">
         {h.tags.map((tag) => (
           <span
             key={tag}
