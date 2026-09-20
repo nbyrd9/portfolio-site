@@ -287,7 +287,7 @@ export const interests: Interest[] = [
     id: "broadway",
     icon: "drama",
     title: "Broadway",
-    blurb: "When I'm not at my desk, there's a decent chance I'm in a theater seat. 21 shows in the last two years and counting!",
+    blurb: "When I'm not at my desk, there's a decent chance I'm in a theater seat. 31 shows and counting!",
   },
   {
     id: "italian",
