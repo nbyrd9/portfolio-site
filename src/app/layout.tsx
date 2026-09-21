@@ -23,7 +23,7 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nianibyrd.vercel.app"),
+  metadataBase: new URL("https://nianibyrd.dev"),
   title: `${profile.name} · ${profile.title}`,
   description: profile.tagline,
 };

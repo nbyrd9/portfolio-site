@@ -146,11 +146,12 @@ export const experience: Experience[] = [
   {
     id: "docusign",
     company: "Docusign",
-    role: "Developer Advocate",
+    role: "Programmer Writer | Developer Advocate",
     location: "Remote",
     start: "August 2024",
     end: "Present",
     bullets: [
+      "Increased developer blog traffic by 35% YoY through SEO-optimized technical content, generating 30K+ cumulative pageviews across published posts.",
       "Owned and maintained the ongoing quality of 50+ developer-facing resources across API references, code samples, video walkthroughs, and blog posts, setting the standard for technical content quality across Bash, C#, Java, Node.js, PHP, PowerShell, Python, and Ruby.",
       "Led a session on AI-driven financial workflows at Momentum, Docusign's flagship conference, as part of the first-ever Builder Track for technical audiences.",
       "Established Docusign's developer content strategy for MCP server integration from the ground up, enabling developers to build agentic workflows on the platform.",

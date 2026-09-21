@@ -27,7 +27,7 @@ export default function Content() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-accent"
           >
-            See all my writing on Docusign
+            Read more of my blogs
             <ArrowUpRight size={14} />
           </a>
         </motion.div>
