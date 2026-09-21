@@ -1,6 +1,6 @@
 export const profile = {
   name: "Niani Byrd",
-  title: "Software Engineer | Developer Advocate",
+  title: "Software Engineer | Developer Relations",
   location: "Chicago, IL",
   email: "nianibyrd@gmail.com",
   phone: "804-896-5277",
@@ -146,7 +146,7 @@ export const experience: Experience[] = [
   {
     id: "docusign",
     company: "Docusign",
-    role: "Programmer Writer | Developer Advocate",
+    role: "Technical Writer | Developer Advocate",
     location: "Remote",
     start: "August 2024",
     end: "Present",
