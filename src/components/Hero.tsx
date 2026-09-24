@@ -49,9 +49,9 @@ export default function Hero() {
         <div className="w-full max-w-3xl text-center sm:text-left">
           <motion.p
             variants={item}
-            className="mb-4 font-label text-sm uppercase tracking-[0.2em] text-muted"
+            className="mb-4 whitespace-nowrap font-label text-xs uppercase tracking-[0.12em] text-muted sm:text-sm"
           >
-            Software Engineer · Developer Relations
+            Software & Solutions Engineer | Developer Relations
           </motion.p>
 
           <motion.h1

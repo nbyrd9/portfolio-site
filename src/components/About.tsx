@@ -16,27 +16,29 @@ export default function About() {
             About me
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            I&apos;m a software engineer who brings a builder&apos;s 
-            perspective to developer relations. I&apos;ve shipped features 
-            in ReactJS and Ruby on Rails, run onboarding experiments that shaped 
-            the experience for new users, and brought developer feedback into 
-            product decisions. Staying close to the code helps me understand 
-            what developers need and where they get stuck.
+            I&apos;m a software engineer who brings a builder&apos;s
+            perspective to enterprise customer solutions and developer
+            experience. I&apos;ve shipped features in React and Ruby on
+            Rails, run onboarding experiments, built API integrations and
+            reference implementations, and brought feedback from developers
+            and customers into product conversations. Staying close to the
+            code helps me connect what someone is trying to accomplish with
+            what it takes to make it work.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            What pulled me toward developer relations was knowing what it feels 
-            like to be a blocked engineer: staring at a cryptic error with no clear 
-            next step, digging through outdated docs, losing an afternoon to something 
-            that should have taken ten minutes...😵‍💫 Now I draw on my engineering experience to 
-            create the API docs, tutorials, videos, talks, and reference implementations 
-            I wish I&apos;d had.
+            I enjoy getting into the details of a problem: understanding a
+            customer&apos;s workflow, tracing where an integration gets
+            stuck, and finding a clear path forward. Sometimes that means
+            building an example or troubleshooting alongside a developer.
+            Other times it means creating API docs, tutorials, videos, or
+            talks that help many people solve the same problem.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            I spent years as an international flight attendant before
-            switching into software. Turns out explaining procedures clearly
-            to a packed cabin under
-            pressure is excellent training for turning complexity into
-            something clear. ✈️
+            Before software, I spent years as an international flight
+            attendant. Explaining procedures clearly to a packed cabin under
+            pressure turned out to be excellent training for listening
+            closely, staying calm, and making complex technical ideas easier
+            to understand. ✈️
           </p>
         </motion.div>
       </div>

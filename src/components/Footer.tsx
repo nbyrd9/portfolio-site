@@ -10,7 +10,7 @@ import GithubIcon from "./GithubIcon";
 
 const talkTopics = [
   "developer experience",
-  "software engineering",
+  "solutions engineering",
   "developer relations",
   "technical writing",
 ];
