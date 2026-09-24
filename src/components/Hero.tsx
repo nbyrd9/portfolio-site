@@ -51,7 +51,7 @@ export default function Hero() {
             variants={item}
             className="mb-4 whitespace-nowrap font-label text-xs uppercase tracking-[0.12em] text-muted sm:text-sm"
           >
-            Software & Solutions Engineer | Developer Relations
+            Solutions Engineer | Developer Relations
           </motion.p>
 
           <motion.h1

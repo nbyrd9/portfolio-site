@@ -1,6 +1,6 @@
 export const profile = {
   name: "Niani Byrd",
-  title: "Software & Solutions Engineer | Developer Relations",
+  title: "Solutions Engineer | Developer Relations",
   location: "Chicago, IL",
   email: "nianibyrd@gmail.com",
   phone: "804-896-5277",
