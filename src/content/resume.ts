@@ -294,6 +294,6 @@ export const interests: Interest[] = [
     id: "italian",
     icon: "pizza",
     title: "Learning Italian",
-    blurb: "Zero practical use for it yet. Mostly so I can order dessert with confidence on my next trip.",
+    blurb: "Zero practical use for it yet. Mostly so I can order carbonara with confidence on my next trip.",
   },
 ];
