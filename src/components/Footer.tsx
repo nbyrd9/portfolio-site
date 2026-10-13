@@ -9,9 +9,9 @@ import LinkedinIcon from "./LinkedinIcon";
 import GithubIcon from "./GithubIcon";
 
 const talkTopics = [
+  "software engineering",
   "developer experience",
   "solutions engineering",
-  "developer relations",
   "technical writing",
 ];
 

@@ -146,7 +146,7 @@ export const experience: Experience[] = [
   {
     id: "docusign",
     company: "Docusign",
-    role: "Technical Writer | Developer Advocate",
+    role: "Programmer Writer | Developer Advocate",
     location: "Remote",
     start: "August 2024",
     end: "Present",
